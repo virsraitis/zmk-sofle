@@ -630,6 +630,12 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:backspace-reverse-outline"/>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="854" y="71" width="28" height="26" class="combo"/>
+<a href="#Colemak">
+<text x="868" y="84" class="combo tap layer-activator"><tspan style="font-size: 86%">Colemak</tspan></text>
+</a><text x="868" y="95" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-Colemak">
@@ -977,6 +983,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:backspace-reverse-outline"/>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="854" y="43" width="28" height="26" class="combo"/>
+<a href="#QWERTY">
+<text x="868" y="56" class="combo tap layer-activator">QWERTY</text>
+</a><text x="868" y="67" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
