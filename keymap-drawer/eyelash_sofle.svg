@@ -642,14 +642,14 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="854" y="71" width="28" height="26" class="combo"/>
-<a href="#Colemak">
-<text x="868" y="84" class="combo tap layer-activator"><tspan style="font-size: 86%">Colemak</tspan></text>
+<a href="#COLEMAK">
+<text x="868" y="84" class="combo tap layer-activator"><tspan style="font-size: 86%">COLEMAK</tspan></text>
 </a><text x="868" y="95" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(40, 388)" class="layer-Colemak">
-<text x="0" y="28" class="label" id="Colemak">Colemak:</text>
+<g transform="translate(40, 388)" class="layer-COLEMAK">
+<text x="0" y="28" class="label" id="COLEMAK">COLEMAK:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1006,8 +1006,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 776)" class="layer-Gaming">
-<text x="0" y="28" class="label" id="Gaming">Gaming:</text>
+<g transform="translate(40, 776)" class="layer-GAMING">
+<text x="0" y="28" class="label" id="GAMING">GAMING:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1888,10 +1888,12 @@ rect.held, rect.combo.held {
 <use href="#mdi:menu-left" xlink:href="#mdi:menu-left" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:menu-left"/>
 <use href="#mdi:mouse" xlink:href="#mdi:mouse" x="-8" y="-24" height="15" width="15.0" class="key shifted glyph mdi:mouse"/>
 </g>
-<g transform="translate(616, 147)" class="key trans keypos-33">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(616, 147)" class="key keypos-33">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<a href="#GAMING">
+<text x="0" y="-4" class="key tap layer-activator">GAMING</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(672, 147)" class="key trans keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1938,10 +1940,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:progress-download"/>
 </g>
-<g transform="translate(252, 203)" class="key trans keypos-43">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(252, 203)" class="key keypos-43">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:progress-download"/>
 </g>
 <g transform="translate(308, 203)" class="key trans keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1964,8 +1966,8 @@ rect.held, rect.combo.held {
 <g transform="translate(672, 203)" class="key keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#Colemak">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">Colemak</tspan></text>
+<a href="#COLEMAK">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">COLEMAK</tspan></text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(728, 196)" class="key bootloader keypos-48">
