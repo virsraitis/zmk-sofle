@@ -1,18 +1,18 @@
 layers:
   QWERTY:
   - {t: '`', h: '$$mdi:keyboard-esc$$', s: '~'}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
+  - {t: '1', h: Sft+1, s: '!'}
+  - {t: '2', h: Sft+2, s: '@'}
+  - {t: '3', h: Sft+3, s: '#'}
+  - {t: '4', h: Sft+4, s: $}
+  - {t: '5', h: Sft+5, s: '%'}
   - $$mdi:arrow-up-bold$$
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '-', s: _}
+  - {t: '6', h: Sft+6, s: ^}
+  - {t: '7', h: Sft+7, s: '&'}
+  - {t: '8', h: Sft+8, s: '*'}
+  - {t: '9', h: Sft+9, s: (}
+  - {t: '0', h: Sft+0, s: )}
+  - SYS
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -26,7 +26,7 @@ layers:
   - O
   - P
   - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:alpha-w-box$$
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
@@ -51,7 +51,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '=', s: +}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
@@ -62,22 +62,22 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', h: NAV}
   - $$mdi:apple-keyboard-option$$
-  - SYS
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:backspace-reverse-outline$$
   COLEMAK:
   - {t: '`', h: '$$mdi:keyboard-esc$$', s: '~'}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '-', s: _}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - SYS
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -91,7 +91,7 @@ layers:
   - Y
   - {t: ;, s: ':'}
   - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: R, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
@@ -116,7 +116,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '=', s: +}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -272,7 +272,7 @@ layers:
   - RGB HUI
   - RGB HUD
   - RGB SAI
-  - RGB SAD
+  - {t: RGB SAD, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
   - BT CLR ALL
@@ -322,7 +322,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [12, 24]
