@@ -136,7 +136,7 @@
         };
 
         underscore {
-            bindings = <&kp UNDER>;
+            bindings = <&kp LS(MINUS)>;
             key-positions = <34 35>;
             layers = <0 1>;
         };
@@ -166,7 +166,7 @@
         };
 
         paste {
-            bindings = <&kp LC(V)>;
+            bindings = <&kp K_PASTE>;
             key-positions = <42 43>;
             layers = <0 1>;
         };
@@ -198,8 +198,8 @@
 &mt ESC GRAVE  &num_tap LS(N1) N1  &num_tap LS(N2) N2  &num_tap LS(N3) N3  &num_tap LS(N4) N4  &num_tap LS(N5) N5    &kp UP_ARROW     &num_tap LS(N6) N6  &num_tap LS(N7) N7  &num_tap LS(N8) N8  &num_tap LS(N9) N9  &num_tap LS(N0) N0    &mo 4
 &kp TAB        &kp Q               &kp W               &kp E               &kp R               &kp T                 &kp DOWN_ARROW   &kp Y               &kp U               &kp I               &kp O               &kp P                 &kp BSLH
 &caps_word     &hm_l LEFT_GUI A    &hm_l LEFT_ALT S    &hm_l LSHIFT D      &hm_l LCTRL F       &kp G                 &kp LEFT_ARROW   &kp H               &hm_r RCTRL J       &hm_r RSHIFT K      &hm_r LALT L        &hm_r RIGHT_GUI SEMI  &kp APOS
-&kp LSHFT      &kp Z               &kp X               &kp C               &kp V               &kp B                 &kp RIGHT_ARROW  &kp N               &kp M               &kp COMMA           &kp DOT             &kp FSLH              &kp RSHIFT
-&kp C_MUTE     &kp LCTRL           &kp LEFT_GUI        &shift_dance        &kp SPACE           &mo 3                 &kp ENTER        &kp BACKSPACE       &lt 3 ENTER         &kp RIGHT_ALT       &none               &kp DELETE
+&shift_dance   &kp Z               &kp X               &kp C               &kp V               &kp B                 &kp RIGHT_ARROW  &kp N               &kp M               &kp COMMA           &kp DOT             &kp FSLH              &kp RSHIFT
+&kp C_MUTE     &kp LCTRL           &kp LEFT_GUI        &kp LALT            &kp SPACE           &mo 3                 &kp ENTER        &kp BACKSPACE       &lt 3 ENTER         &kp RIGHT_ALT       &none               &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -221,11 +221,11 @@
 
         GAMING {
             bindings = <
-&kp ESC    &kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &trans  &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &kp BSPC
+&kp ESC    &kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &trans  &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &mo 4
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T     &trans  &kp Y     &kp U      &kp I      &kp O    &kp P     &kp BSLH
 &kp CAPS   &kp A      &kp S     &kp D     &kp F      &kp G     &trans  &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp APOS
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B     &trans  &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &trans
-&trans     &kp LCTRL  &kp LWIN  &kp LALT  &kp SPACE  &trans    &trans  &kp BSPC  &kp ENTER  &kp RALT   &trans   &trans
+&trans     &kp LCTRL  &kp LWIN  &kp LALT  &kp SPACE  &trans    &trans  &kp BSPC  &kp ENTER  &kp RALT   &trans   &kp DEL
             >;
 
             label = "GAMING";
