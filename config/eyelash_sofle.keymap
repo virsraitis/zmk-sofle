@@ -166,7 +166,7 @@
         };
 
         paste {
-            bindings = <&kp K_PASTE>;
+            bindings = <&kp RC(V)>;
             key-positions = <42 43>;
             layers = <0 1>;
         };
