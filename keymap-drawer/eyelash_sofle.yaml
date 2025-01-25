@@ -353,7 +353,7 @@ combos:
   k: Ctl+C
   l: [QWERTY, COLEMAK]
 - p: [42, 43]
-  k: PASTE
+  k: Ctl+V
   l: [QWERTY, COLEMAK]
 - p: [43, 41]
   k: Ctl+X
