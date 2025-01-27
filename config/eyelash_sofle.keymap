@@ -188,6 +188,16 @@
             key-positions = <46 47>;
             layers = <0 1>;
         };
+
+        right_square_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <12 25>;
+        };
+
+        left_square_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <11 24>;
+        };
     };
 
     keymap {
@@ -208,7 +218,7 @@
 
         COLEMAK {
             bindings = <
-&mt ESC GRAVE  &trans            &trans        &trans          &trans         &trans    &trans  &trans  &trans         &trans          &trans        &trans             &mo 4
+&mt GRAVE ESC  &trans            &trans        &trans          &trans         &trans    &trans  &trans  &trans         &trans          &trans        &trans             &mo 4
 &kp TAB        &kp Q             &kp W         &kp F           &kp P          &kp B     &trans  &kp J   &kp L          &kp U           &kp Y         &kp SEMI           &kp BSLH
 &trans         &hm_l LEFT_GUI A  &hm_l LALT R  &hm_l LSHIFT S  &hm_l LCTRL T  &kp G     &trans  &kp M   &hm_r RCTRL N  &hm_r RSHIFT E  &hm_r LALT I  &hm_r RIGHT_GUI O  &kp APOS
 &kp LSHFT      &kp Z             &kp X         &kp C           &kp D          &kp V     &trans  &kp K   &kp H          &kp COMMA       &kp DOT       &kp FSLH           &kp RSHIFT
@@ -235,9 +245,9 @@
         NAV {
             bindings = <
 &kp ESC     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5            &mmv MOVE_UP     &kp F6      &kp F7      &kp F8     &kp F9     &kp F10           &kp F11
-&trans      &trans  &trans  &trans  &trans  &trans            &mmv MOVE_DOWN   &kp PG_UP   &kp HOME    &kp UP     &kp END    &kp MINUS         &kp F12
-&trans      &trans  &trans  &trans  &trans  &msc SCRL_UP      &mmv MOVE_LEFT   &kp PG_DN   &kp LEFT    &kp DOWN   &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &trans  &trans  &trans  &trans  &msc SCRL_DOWN    &mmv MOVE_RIGHT  &kp DELETE  &kp INSERT  &kp MINUS  &kp EQUAL  &kp F12           &trans
+&trans      &trans  &trans  &trans  &trans  &msc SCRL_UP      &mmv MOVE_DOWN   &kp PG_UP   &kp HOME    &kp UP     &kp END    &kp MINUS         &kp F12
+&trans      &trans  &trans  &trans  &trans  &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp PG_DN   &kp LEFT    &kp DOWN   &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &trans  &trans  &trans  &trans  &kp BACKSPACE     &mmv MOVE_RIGHT  &kp DELETE  &kp INSERT  &kp MINUS  &kp EQUAL  &kp F12           &trans
 &kp C_MUTE  &trans  &trans  &trans  &trans  &trans            &mkp LCLK        &trans      &trans      &trans     &trans     &trans
             >;
 
