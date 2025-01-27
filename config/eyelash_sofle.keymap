@@ -247,9 +247,9 @@
 
         SYS {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans           &trans
 &trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &to 2            &trans           &trans           &trans           &kp LBRC         &kp RBRC
+&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &to 2            &trans           &trans           &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
 &trans     &sys_reset    &trans          &bootloader   &bootloader   &trans          &mmv MOVE_RIGHT  &to 0            &to 1            &sys_reset       &soft_off        &bootloader      &trans
 &trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans           &trans           &trans           &trans           &trans
             >;
