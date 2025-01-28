@@ -89,7 +89,7 @@ layers:
   - L
   - U
   - Y
-  - {t: ;, s: ':'}
+  - {t: ;, h: ':', s: ':'}
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
