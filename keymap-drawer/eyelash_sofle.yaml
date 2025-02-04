@@ -51,11 +51,11 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - '&shift_dance_right'
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
+  - '&shift_dance'
   - $$mdi:keyboard-space$$
   - NAV
   - {t: '$$mdi:keyboard-return$$', type: enter}
