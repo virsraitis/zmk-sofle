@@ -218,6 +218,11 @@
             bindings = <&kp QUESTION>;
             key-positions = <50 49>;
         };
+
+        sticky_latvian {
+            bindings = <&sl 5>;
+            key-positions = <30 29>;
+        };
     };
 
     keymap {
@@ -286,6 +291,16 @@
 
             sensor-bindings = <&scroll_encoder>;
             label = "SYS";
+        };
+
+        LATVIAN {
+            bindings = <
+&trans  &trans     &trans     &trans     &trans  &trans       &trans  &trans     &trans     &trans     &trans     &trans     &trans
+&trans  &trans     &trans     &trans     &trans  &trans       &trans  &trans     &kp RA(L)  &kp RA(U)  &trans     &trans     &trans
+&trans  &kp RA(A)  &kp RA(R)  &kp RA(S)  &trans  &kp RA(G)    &trans  &trans     &kp RA(N)  &kp RA(E)  &kp RA(I)  &kp RA(O)  &trans
+&trans  &kp RA(Z)  &trans     &kp RA(C)  &trans  &trans       &trans  &kp RA(K)  &trans     &trans     &trans     &trans     &trans
+&trans  &trans     &trans     &trans     &trans  &trans       &trans  &trans     &trans     &trans     &trans     &trans
+            >;
         };
     };
 };
