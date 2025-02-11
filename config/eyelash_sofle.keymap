@@ -44,55 +44,8 @@
 #define HM_TAPPING_TERM_FAST 200
 #define HM_PRIOR_IDLE 150
 
-/*
-#define OS_UNICODE_LEAD &macro_tap &kp RALT &kp U  // Windows + WinCompose
-#define OS_UNICODE_TRAIL &macro_tap &kp RET        // Windows + WinCompose
-
-ZMK_UNICODE_PAIR( lv_aa,   N0, N1,  N0, N1,   N0, N1,  N0, N0 ) // ā/Ā
-ZMK_UNICODE_PAIR( lv_cc,   N0, N1,  N0,  D,   N0, N1,  N0,  C ) // č/Č
-ZMK_UNICODE_PAIR( lv_ee,   N0, N1,  N1, N3,   N0, N1,  N1, N2 ) // ē/Ē
-ZMK_UNICODE_PAIR( lv_gg,   N0, N1,  N2, N3,   N0, N1,  N2, N2 ) // ģ/Ģ
-ZMK_UNICODE_PAIR( lv_ii,   N0, N1,  N2,  B,   N0, N1,  N2,  A ) // ī/Ī
-ZMK_UNICODE_PAIR( lv_kk,   N0, N1,  N3, N7,   N0, N1,  N3, N6 ) // ķ/Ķ
-ZMK_UNICODE_PAIR( lv_ll,   N0, N1,  N3,  C,   N0, N1,  N3,  B ) // ļ/Ļ
-ZMK_UNICODE_PAIR( lv_nn,   N0, N1,  N4, N6,   N0, N1,  N4, N5 ) // ņ/Ņ
-ZMK_UNICODE_PAIR( lv_oo,   N0, N1,  N4,  D,   N0, N1,  N4,  C ) // ō/Ō
-ZMK_UNICODE_PAIR( lv_rr,   N0, N1,  N4,  D,   N0, N1,  N4,  C ) // ŗ/Ŗ
-ZMK_UNICODE_PAIR( lv_ss,   N0, N1,  N6, N1,   N0, N1,  N6, N0 ) // š/Š
-ZMK_UNICODE_PAIR( lv_uu,   N0, N1,  N6,  B,   N0, N1,  N6,  A ) // ū/Ū
-ZMK_UNICODE_PAIR( lv_zz,   N0, N1,  N7,  E,   N0, N1,  N7,  D ) // ž/Ž
-
-#define LV_AA_LOWER_CODE &macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N1
-#define LV_AA_UPPER_CODE &macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N0
-*/
-
 / {
-    macros {
-        lv_aa_lower: lv_aa_lower {
-            compatible = "zmk,behavior-macro";
-            wait-ms = <0>;
-            tap-ms = <0>;
-            #binding-cells = <0>;
-            bindings = &macro_tap &kp RALT &kp U, &macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N1, &macro_tap &kp RET;
-        };
-
-        lv_aa_upper: lv_aa_upper {
-            compatible = "zmk,behavior-macro";
-            wait-ms = <0>;
-            tap-ms = <0>;
-            #binding-cells = <0>;
-            bindings = &macro_tap &kp RALT &kp U, &macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N0, &macro_tap &kp RET;
-        };
-    };
-
     behaviors {
-        lv_aa: lv_aa {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&lv_aa_lower>, <&lv_aa_upper>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         mmv {
             acceleration-exponent = <1>;      // 1
             time-to-max-speed-ms = <900>;    // 40
@@ -314,7 +267,7 @@ ZMK_UNICODE_PAIR( lv_zz,   N0, N1,  N7,  E,   N0, N1,  N7,  D ) // ž/Ž
 &kp ESC     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5            &mmv MOVE_UP     &kp F6      &kp F7      &kp F8     &kp F9     &kp F10           &kp F11
 &trans      &trans  &trans  &trans  &trans  &msc SCRL_UP      &mmv MOVE_DOWN   &kp PG_UP   &kp HOME    &kp UP     &kp END    &kp MINUS         &kp F12
 &trans      &trans  &trans  &trans  &trans  &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp PG_DN   &kp LEFT    &kp DOWN   &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &trans  &trans  &trans  &lv_aa  &kp BACKSPACE     &mmv MOVE_RIGHT  &kp DELETE  &kp INSERT  &kp MINUS  &kp EQUAL  &kp F12           &trans
+&trans      &trans  &trans  &trans  &trans  &kp BACKSPACE     &mmv MOVE_RIGHT  &kp DELETE  &kp INSERT  &kp MINUS  &kp EQUAL  &kp F12           &trans
 &kp C_MUTE  &trans  &trans  &trans  &trans  &trans            &mkp LCLK        &trans      &trans      &trans     &trans     &trans
             >;
 
