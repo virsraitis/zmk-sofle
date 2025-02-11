@@ -44,10 +44,10 @@
 #define HM_TAPPING_TERM_FAST 200
 #define HM_PRIOR_IDLE 150
 
+/*
 #define OS_UNICODE_LEAD &macro_tap &kp RALT &kp U  // Windows + WinCompose
 #define OS_UNICODE_TRAIL &macro_tap &kp RET        // Windows + WinCompose
 
-/*
 ZMK_UNICODE_PAIR( lv_aa,   N0, N1,  N0, N1,   N0, N1,  N0, N0 ) // ā/Ā
 ZMK_UNICODE_PAIR( lv_cc,   N0, N1,  N0,  D,   N0, N1,  N0,  C ) // č/Č
 ZMK_UNICODE_PAIR( lv_ee,   N0, N1,  N1, N3,   N0, N1,  N1, N2 ) // ē/Ē
@@ -61,10 +61,10 @@ ZMK_UNICODE_PAIR( lv_rr,   N0, N1,  N4,  D,   N0, N1,  N4,  C ) // ŗ/Ŗ
 ZMK_UNICODE_PAIR( lv_ss,   N0, N1,  N6, N1,   N0, N1,  N6, N0 ) // š/Š
 ZMK_UNICODE_PAIR( lv_uu,   N0, N1,  N6,  B,   N0, N1,  N6,  A ) // ū/Ū
 ZMK_UNICODE_PAIR( lv_zz,   N0, N1,  N7,  E,   N0, N1,  N7,  D ) // ž/Ž
-*/
 
 #define LV_AA_LOWER_CODE &macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N1
 #define LV_AA_UPPER_CODE &macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N0
+*/
 
 / {
     macros {
@@ -73,7 +73,7 @@ ZMK_UNICODE_PAIR( lv_zz,   N0, N1,  N7,  E,   N0, N1,  N7,  D ) // ž/Ž
             wait-ms = <0>;
             tap-ms = <0>;
             #binding-cells = <0>;
-            bindings = <OS_UNICODE_LEAD>, <LV_AA_LOWER_CODE>, <OS_UNICODE_TRAIL>;
+            bindings = &macro_tap &kp RALT &kp U, &macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N1, &macro_tap &kp RET;
         };
 
         lv_aa_upper: lv_aa_upper {
@@ -81,7 +81,7 @@ ZMK_UNICODE_PAIR( lv_zz,   N0, N1,  N7,  E,   N0, N1,  N7,  D ) // ž/Ž
             wait-ms = <0>;
             tap-ms = <0>;
             #binding-cells = <0>;
-            bindings = <OS_UNICODE_LEAD>, <LV_AA_UPPER_CODE>, <OS_UNICODE_TRAIL>;
+            bindings = &macro_tap &kp RALT &kp U, &macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N0 &kp KP_N0, &macro_tap &kp RET;
         };
     };
 
