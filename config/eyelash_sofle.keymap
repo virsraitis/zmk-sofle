@@ -230,11 +230,11 @@
 
         QWERTY {
             bindings = <
-&mt ESC GRAVE  &num_tap LS(N1) N1  &num_tap LS(N2) N2  &num_tap LS(N3) N3  &num_tap LS(N4) N4  &num_tap LS(N5) N5    &kp UP_ARROW     &num_tap LS(N6) N6  &num_tap LS(N7) N7  &num_tap LS(N8) N8  &num_tap LS(N9) N9  &num_tap LS(N0) N0    &mo 4
-&kp TAB        &kp Q               &kp W               &kp E               &kp R               &kp T                 &kp DOWN_ARROW   &kp Y               &kp U               &kp I               &kp O               &kp P                 &kp BSLH
-&mo 3          &hm_l LEFT_GUI A    &hm_l LEFT_ALT S    &hm_l LSHIFT D      &hm_l LCTRL F       &kp G                 &kp LEFT_ARROW   &kp H               &hm_r RCTRL J       &hm_r RSHIFT K      &hm_r LALT L        &hm_r RIGHT_GUI SEMI  &kp APOS
-&shift_dance   &kp Z               &kp X               &kp C               &kp V               &kp B                 &kp RIGHT_ARROW  &kp N               &kp M               &kp COMMA           &kp DOT             &kp FSLH              &shift_dance_right
-&kp C_MUTE     &kp LCTRL           &kp LALT            &shift_dance        &kp SPACE           &mo 3                 &kp ENTER        &kp BACKSPACE       &lt 3 ENTER         &kp RIGHT_ALT       &none               &kp DELETE
+&kp GRAVE     &num_tap LS(N1) N1  &num_tap LS(N2) N2  &num_tap LS(N3) N3  &num_tap LS(N4) N4  &num_tap LS(N5) N5    &kp UP_ARROW     &num_tap LS(N6) N6  &num_tap LS(N7) N7  &num_tap LS(N8) N8  &num_tap LS(N9) N9  &num_tap LS(N0) N0    &mo 4
+&kp ESC       &kp Q               &kp W               &kp E               &kp R               &kp T                 &kp DOWN_ARROW   &kp Y               &kp U               &kp I               &kp O               &kp P                 &kp BSLH
+&kp TAB       &hm_l LEFT_GUI A    &hm_l LEFT_ALT S    &hm_l LSHIFT D      &hm_l LCTRL F       &kp G                 &kp LEFT_ARROW   &kp H               &hm_r RCTRL J       &hm_r RSHIFT K      &hm_r LALT L        &hm_r RIGHT_GUI SEMI  &kp APOS
+&shift_dance  &kp Z               &kp X               &kp C               &kp V               &kp B                 &kp RIGHT_ARROW  &kp N               &kp M               &kp COMMA           &kp DOT             &kp FSLH              &shift_dance_right
+&kp C_MUTE    &kp LCTRL           &kp LALT            &shift_dance        &kp SPACE           &mo 3                 &kp ENTER        &kp BACKSPACE       &lt 3 ENTER         &sl 5               &kp RALT            &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -243,11 +243,11 @@
 
         COLEMAK {
             bindings = <
-&mt GRAVE ESC  &trans            &trans        &trans          &trans         &trans    &trans  &trans  &trans         &trans          &trans        &trans             &mo 4
-&kp TAB        &kp Q             &kp W         &kp F           &kp P          &kp B     &trans  &kp J   &kp L          &kp U           &kp Y         &mt COLON SEMI     &kp BSLH
-&trans         &hm_l LEFT_GUI A  &hm_l LALT R  &hm_l LSHIFT S  &hm_l LCTRL T  &kp G     &trans  &kp M   &hm_r RCTRL N  &hm_r RSHIFT E  &hm_r LALT I  &hm_r RIGHT_GUI O  &kp APOS
-&trans         &kp Z             &kp X         &kp C           &kp D          &kp V     &trans  &kp K   &kp H          &kp COMMA       &kp DOT       &kp FSLH           &trans
-&trans         &trans            &trans        &trans          &trans         &trans    &trans  &trans  &trans         &trans          &trans        &trans
+&trans  &trans            &trans        &trans          &trans         &trans    &trans  &trans  &trans         &trans          &trans        &trans             &mo 4
+&trans  &kp Q             &kp W         &kp F           &kp P          &kp B     &trans  &kp J   &kp L          &kp U           &kp Y         &mt COLON SEMI     &kp BSLH
+&trans  &hm_l LEFT_GUI A  &hm_l LALT R  &hm_l LSHIFT S  &hm_l LCTRL T  &kp G     &trans  &kp M   &hm_r RCTRL N  &hm_r RSHIFT E  &hm_r LALT I  &hm_r RIGHT_GUI O  &kp APOS
+&trans  &kp Z             &kp X         &kp C           &kp D          &kp V     &trans  &kp K   &kp H          &kp COMMA       &kp DOT       &kp FSLH           &trans
+&trans  &trans            &trans        &trans          &trans         &trans    &trans  &trans  &trans         &trans          &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -301,6 +301,8 @@
 &trans  &kp RA(Z)  &trans     &kp RA(C)  &trans  &trans       &trans  &kp RA(K)  &trans     &trans     &trans     &trans     &trans
 &trans  &trans     &trans     &trans     &trans  &trans       &trans  &trans     &trans     &trans     &trans     &trans
             >;
+
+            label = "LATVIAN";
         };
     };
 };
