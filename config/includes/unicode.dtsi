@@ -1,0 +1,16 @@
+// Latvian letters
+
+//                name     unshifted         shifted
+ZMK_UNICODE_PAIR( lv_aa,   N0, N1,  N0, N1,   N0, N1,  N0, N0 ) // ā/Ā
+ZMK_UNICODE_PAIR( lv_cc,   N0, N1,  N0,  D,   N0, N1,  N0,  C ) // č/Č
+ZMK_UNICODE_PAIR( lv_ee,   N0, N1,  N1, N3,   N0, N1,  N1, N2 ) // ē/Ē
+ZMK_UNICODE_PAIR( lv_gg,   N0, N1,  N2, N3,   N0, N1,  N2, N2 ) // ģ/Ģ
+ZMK_UNICODE_PAIR( lv_ii,   N0, N1,  N2,  B,   N0, N1,  N2,  A ) // ī/Ī
+ZMK_UNICODE_PAIR( lv_kk,   N0, N1,  N3, N7,   N0, N1,  N3, N6 ) // ķ/Ķ
+ZMK_UNICODE_PAIR( lv_ll,   N0, N1,  N3,  C,   N0, N1,  N3,  B ) // ļ/Ļ
+ZMK_UNICODE_PAIR( lv_nn,   N0, N1,  N4, N6,   N0, N1,  N4, N5 ) // ņ/Ņ
+ZMK_UNICODE_PAIR( lv_oo,   N0, N1,  N4,  D,   N0, N1,  N4,  C ) // ō/Ō
+ZMK_UNICODE_PAIR( lv_rr,   N0, N1,  N4,  D,   N0, N1,  N4,  C ) // ŗ/Ŗ
+ZMK_UNICODE_PAIR( lv_ss,   N0, N1,  N6, N1,   N0, N1,  N6, N0 ) // š/Š
+ZMK_UNICODE_PAIR( lv_uu,   N0, N1,  N6,  B,   N0, N1,  N6,  A ) // ū/Ū
+ZMK_UNICODE_PAIR( lv_zz,   N0, N1,  N7,  E,   N0, N1,  N7,  D ) // ž/Ž
