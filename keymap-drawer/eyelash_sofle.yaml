@@ -260,8 +260,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   NUM:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: NUM, h: toggle}
+  - {t: NUM, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -502,4 +502,7 @@ combos:
   l: [QWERTY, COLEMAK]
 - p: [30, 29]
   k: {t: LATVIAN, h: '$$mdi:gesture-tap-hold$$'}
+  l: [QWERTY, COLEMAK]
+- p: [44, 43]
+  k: Alt+V
   l: [QWERTY, COLEMAK]
