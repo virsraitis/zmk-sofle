@@ -128,13 +128,13 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <14 15>;
+            key-positions = <>;
             layers = <0 1>;
         };
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <15 16>;
+            key-positions = <31 30>;
             layers = <0 1>;
         };
 
@@ -151,7 +151,7 @@
         };
 
         underscore {
-            bindings = <&kp LS(MINUS)>;
+            bindings = <&kp UNDERSCORE>;
             key-positions = <34 35>;
             layers = <0 1>;
         };
@@ -164,7 +164,7 @@
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <23 24>;
+            key-positions = <35 36>;
             layers = <0 1>;
         };
 
@@ -207,21 +207,25 @@
         right_square_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <12 25>;
+            layers = <0 1>;
         };
 
         left_square_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <11 24>;
+            layers = <0 1>;
         };
 
         question_mark {
             bindings = <&kp QUESTION>;
             key-positions = <50 49>;
+            layers = <0 1>;
         };
 
         sticky_latvian {
-            bindings = <&sl 5>;
+            bindings = <&sl 4>;
             key-positions = <30 29>;
+            layers = <0 1>;
         };
     };
 
@@ -230,11 +234,11 @@
 
         QWERTY {
             bindings = <
-&kp GRAVE     &num_tap LS(N1) N1  &num_tap LS(N2) N2  &num_tap LS(N3) N3  &num_tap LS(N4) N4  &num_tap LS(N5) N5    &kp UP_ARROW     &num_tap LS(N6) N6  &num_tap LS(N7) N7  &num_tap LS(N8) N8  &num_tap LS(N9) N9  &num_tap LS(N0) N0    &mo 4
-&kp ESC       &kp Q               &kp W               &kp E               &kp R               &kp T                 &kp DOWN_ARROW   &kp Y               &kp U               &kp I               &kp O               &kp P                 &kp BSLH
-&kp TAB       &hm_l LEFT_GUI A    &hm_l LEFT_ALT S    &hm_l LSHIFT D      &hm_l LCTRL F       &kp G                 &kp LEFT_ARROW   &kp H               &hm_r RCTRL J       &hm_r RSHIFT K      &hm_r LALT L        &hm_r RIGHT_GUI SEMI  &kp APOS
+&kp GRAVE     &num_tap LS(N1) N1  &num_tap LS(N2) N2  &num_tap LS(N3) N3  &num_tap LS(N4) N4  &num_tap LS(N5) N5    &kp UP_ARROW     &num_tap LS(N6) N6  &num_tap LS(N7) N7  &num_tap LS(N8) N8  &num_tap LS(N9) N9  &num_tap LS(N0) N0    &mo 6
+&kp ESC       &kp Q               &kp W               &kp E               &kp R               &kp T                 &kp DOWN_ARROW   &kp Y               &kp U               &kp I               &kp O               &kp P                 &kp APOS
+&kp TAB       &hm_l LEFT_GUI A    &hm_l LEFT_ALT S    &hm_l LSHIFT D      &hm_l LCTRL F       &kp G                 &kp LEFT_ARROW   &kp H               &hm_r RCTRL J       &hm_r RSHIFT K      &hm_r LALT L        &hm_r RIGHT_GUI SEMI  &kp BACKSPACE
 &shift_dance  &kp Z               &kp X               &kp C               &kp V               &kp B                 &kp RIGHT_ARROW  &kp N               &kp M               &kp COMMA           &kp DOT             &kp FSLH              &shift_dance_right
-&kp C_MUTE    &kp LCTRL           &kp LALT            &shift_dance        &kp SPACE           &mo 3                 &kp ENTER        &kp BACKSPACE       &lt 3 ENTER         &sl 5               &kp RALT            &kp DELETE
+&kp C_MUTE    &kp LCTRL           &kp LALT            &shift_dance        &kp SPACE           &mo 3                 &kp ENTER        &kp BACKSPACE       &lt 3 ENTER         &sl 4               &kp RALT            &tog 5
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -243,9 +247,9 @@
 
         COLEMAK {
             bindings = <
-&trans  &trans            &trans        &trans          &trans         &trans    &trans  &trans  &trans         &trans          &trans        &trans             &mo 4
-&trans  &kp Q             &kp W         &kp F           &kp P          &kp B     &trans  &kp J   &kp L          &kp U           &kp Y         &mt COLON SEMI     &kp BSLH
-&trans  &hm_l LEFT_GUI A  &hm_l LALT R  &hm_l LSHIFT S  &hm_l LCTRL T  &kp G     &trans  &kp M   &hm_r RCTRL N  &hm_r RSHIFT E  &hm_r LALT I  &hm_r RIGHT_GUI O  &kp APOS
+&trans  &trans            &trans        &trans          &trans         &trans    &trans  &trans  &trans         &trans          &trans        &trans             &mo 6
+&trans  &kp Q             &kp W         &kp F           &kp P          &kp B     &trans  &kp J   &kp L          &kp U           &kp Y         &mt COLON SEMI     &kp APOS
+&trans  &hm_l LEFT_GUI A  &hm_l LALT R  &hm_l LSHIFT S  &hm_l LCTRL T  &kp G     &trans  &kp M   &hm_r RCTRL N  &hm_r RSHIFT E  &hm_r LALT I  &hm_r RIGHT_GUI O  &kp BACKSPACE
 &trans  &kp Z             &kp X         &kp C           &kp D          &kp V     &trans  &kp K   &kp H          &kp COMMA       &kp DOT       &kp FSLH           &trans
 &trans  &trans            &trans        &trans          &trans         &trans    &trans  &trans  &trans         &trans          &trans        &trans
             >;
@@ -256,7 +260,7 @@
 
         GAMING {
             bindings = <
-&kp ESC    &kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &trans  &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &mo 4
+&kp ESC    &kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &trans  &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &mo 6
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T     &trans  &kp Y     &kp U      &kp I      &kp O    &kp P     &kp BSLH
 &kp CAPS   &kp A      &kp S     &kp D     &kp F      &kp G     &trans  &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp APOS
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B     &trans  &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &trans
@@ -271,13 +275,37 @@
             bindings = <
 &kp ESC     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5            &mmv MOVE_UP     &kp F6      &kp F7      &kp F8     &kp F9     &kp F10           &kp F11
 &trans      &trans  &trans  &trans  &trans  &msc SCRL_UP      &mmv MOVE_DOWN   &kp PG_UP   &kp HOME    &kp UP     &kp END    &kp MINUS         &kp F12
-&trans      &trans  &trans  &trans  &trans  &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp PG_DN   &kp LEFT    &kp DOWN   &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &trans  &trans  &trans  &trans  &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp PG_DN   &kp LEFT    &kp DOWN   &kp RIGHT  &kp LEFT_BRACKET  &kp BACKSPACE
 &trans      &trans  &trans  &trans  &trans  &kp BACKSPACE     &mmv MOVE_RIGHT  &kp DELETE  &kp INSERT  &kp MINUS  &kp EQUAL  &kp F12           &trans
 &kp C_MUTE  &trans  &trans  &trans  &trans  &trans            &mkp LCLK        &trans      &trans      &trans     &trans     &trans
             >;
 
             display-name = "NAV";
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        LATVIAN {
+            bindings = <
+&trans  &trans     &trans     &trans     &trans  &trans       &trans  &trans     &trans     &trans     &trans     &trans     &trans
+&trans  &trans     &trans     &trans     &trans  &trans       &trans  &trans     &kp RA(L)  &kp RA(U)  &trans     &trans     &trans
+&trans  &kp RA(A)  &kp RA(R)  &kp RA(S)  &trans  &kp RA(G)    &trans  &trans     &kp RA(N)  &kp RA(E)  &kp RA(I)  &kp RA(O)  &trans
+&trans  &kp RA(Z)  &trans     &kp RA(C)  &trans  &trans       &trans  &kp RA(K)  &trans     &trans     &trans     &trans     &trans
+&trans  &trans     &trans     &trans     &trans  &trans       &trans  &trans     &trans     &trans     &trans     &trans
+            >;
+
+            label = "LATVIAN";
+        };
+
+        NUM {
+            bindings = <
+&trans  &trans           &trans           &trans           &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans           &trans           &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "NUM";
         };
 
         SYS {
@@ -291,18 +319,6 @@
 
             sensor-bindings = <&scroll_encoder>;
             label = "SYS";
-        };
-
-        LATVIAN {
-            bindings = <
-&trans  &trans     &trans     &trans     &trans  &trans       &trans  &trans     &trans     &trans     &trans     &trans     &trans
-&trans  &trans     &trans     &trans     &trans  &trans       &trans  &trans     &kp RA(L)  &kp RA(U)  &trans     &trans     &trans
-&trans  &kp RA(A)  &kp RA(R)  &kp RA(S)  &trans  &kp RA(G)    &trans  &trans     &kp RA(N)  &kp RA(E)  &kp RA(I)  &kp RA(O)  &trans
-&trans  &kp RA(Z)  &trans     &kp RA(C)  &trans  &trans       &trans  &kp RA(K)  &trans     &trans     &trans     &trans     &trans
-&trans  &trans     &trans     &trans     &trans  &trans       &trans  &trans     &trans     &trans     &trans     &trans
-            >;
-
-            label = "LATVIAN";
         };
     };
 };
