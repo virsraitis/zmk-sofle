@@ -113,6 +113,13 @@
 
             tapping-term-ms = <200>;
         };
+
+        td_gui_caps_lock: td_gui_caps_lock {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_GUI_CAPS_LOCK";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI>, <&kp CAPS>;
+        };
     };
 
     scroll_encoder: scroll_encoder {
@@ -217,7 +224,7 @@
         };
 
         sticky_latvian {
-            bindings = <&sl 4>;
+            bindings = <&sl 3>;
             key-positions = <30 29>;
             layers = <0 1>;
         };
@@ -228,11 +235,11 @@
 
         QWERTY {
             bindings = <
-&kp GRAVE     &num_tap LS(N1) N1  &num_tap LS(N2) N2  &num_tap LS(N3) N3  &num_tap LS(N4) N4  &num_tap LS(N5) N5    &kp UP_ARROW     &num_tap LS(N6) N6  &num_tap LS(N7) N7  &num_tap LS(N8) N8  &num_tap LS(N9) N9  &num_tap LS(N0) N0    &mo 6
-&kp ESC       &kp Q               &kp W               &kp E               &kp R               &kp T                 &kp DOWN_ARROW   &kp Y               &kp U               &kp I               &kp O               &kp P                 &kp APOS
-&kp TAB       &hm_l LEFT_GUI A    &hm_l LEFT_ALT S    &hm_l LSHIFT D      &hm_l LCTRL F       &kp G                 &kp LEFT_ARROW   &kp H               &hm_r RCTRL J       &hm_r RSHIFT K      &hm_r LALT L        &hm_r RIGHT_GUI SEMI  &kp BACKSPACE
-&shift_dance  &kp Z               &kp X               &kp C               &kp V               &kp B                 &kp RIGHT_ARROW  &kp N               &kp M               &kp COMMA           &kp DOT             &kp FSLH              &shift_dance_right
-&kp C_MUTE    &kp LCTRL           &kp LALT            &shift_dance        &kp SPACE           &mo 3                 &kp ENTER        &sl 4               &lt 3 ENTER         &sl 4               &kp RALT            &tog 5
+&kp GRAVE          &num_tap LS(N1) N1  &num_tap LS(N2) N2  &num_tap LS(N3) N3  &num_tap LS(N4) N4  &num_tap LS(N5) N5    &kp UP_ARROW     &num_tap LS(N6) N6  &num_tap LS(N7) N7  &num_tap LS(N8) N8  &num_tap LS(N9) N9  &num_tap LS(N0) N0    &mo 5
+&kp ESC            &kp Q               &kp W               &kp E               &kp R               &kp T                 &kp DOWN_ARROW   &kp Y               &kp U               &kp I               &kp O               &kp P                 &kp APOS
+&kp TAB            &hm_l LEFT_GUI A    &hm_l LEFT_ALT S    &hm_l LSHIFT D      &hm_l LCTRL F       &kp G                 &kp LEFT_ARROW   &kp H               &hm_r RCTRL J       &hm_r RSHIFT K      &hm_r LALT L        &hm_r RIGHT_GUI SEMI  &kp BACKSPACE
+&td_gui_caps_lock  &kp Z               &kp X               &kp C               &kp V               &kp B                 &kp RIGHT_ARROW  &kp N               &kp M               &kp COMMA           &kp DOT             &kp FSLH              &shift_dance_right
+&kp C_MUTE         &kp LCTRL           &kp LALT            &shift_dance        &kp SPACE           &mo 2                 &kp ENTER        &sl 3               &lt 2 ENTER         &shift_dance_right  &kp RALT            &tog 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -252,26 +259,13 @@
             label = "COLEMAK";
         };
 
-        GAMING {
-            bindings = <
-&kp ESC    &kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &trans  &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &mo 6
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T     &trans  &kp Y     &kp U      &kp I      &kp O    &kp P     &kp BSLH
-&kp CAPS   &kp A      &kp S     &kp D     &kp F      &kp G     &trans  &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B     &trans  &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &trans
-&trans     &kp LCTRL  &kp LWIN  &kp LALT  &kp SPACE  &trans    &trans  &kp BSPC  &kp ENTER  &kp RALT   &trans   &kp DEL
-            >;
-
-            label = "GAMING";
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-        };
-
         NAV {
             bindings = <
-&kp ESC     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5            &mmv MOVE_UP     &kp F6      &kp F7      &kp F8     &kp F9     &kp F10           &kp F11
-&trans      &trans  &trans  &trans  &trans  &msc SCRL_UP      &mmv MOVE_DOWN   &kp PG_UP   &kp HOME    &kp UP     &kp END    &kp MINUS         &kp F12
-&trans      &trans  &trans  &trans  &trans  &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp PG_DN   &kp LEFT    &kp DOWN   &kp RIGHT  &kp LEFT_BRACKET  &kp BACKSPACE
-&trans      &trans  &trans  &trans  &trans  &kp BACKSPACE     &mmv MOVE_RIGHT  &kp DELETE  &kp INSERT  &kp MINUS  &kp EQUAL  &kp F12           &trans
-&kp C_MUTE  &trans  &trans  &trans  &trans  &trans            &mkp LCLK        &trans      &trans      &trans     &trans     &trans
+&kp ESC     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5            &mmv MOVE_UP     &kp F6      &kp F7      &kp F8            &kp F9             &kp F10    &kp F11
+&trans      &trans  &trans  &trans  &trans  &msc SCRL_UP      &mmv MOVE_DOWN   &kp PG_UP   &kp HOME    &kp UP            &kp END            &kp MINUS  &kp F12
+&trans      &trans  &trans  &trans  &trans  &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp PG_DN   &kp LEFT    &kp DOWN          &kp RIGHT          &kp EQUAL  &kp BACKSPACE
+&trans      &trans  &trans  &trans  &trans  &kp BACKSPACE     &mmv MOVE_RIGHT  &kp DELETE  &kp INSERT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans
+&kp C_MUTE  &trans  &trans  &trans  &trans  &trans            &mkp LCLK        &trans      &trans      &trans            &trans             &trans
             >;
 
             display-name = "NAV";
@@ -292,11 +286,11 @@
 
         NUM {
             bindings = <
-&trans  &trans           &trans           &trans           &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &trans           &trans           &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "NUM";
@@ -304,15 +298,28 @@
 
         SYS {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans           &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &to 2            &trans           &trans           &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
-&trans     &sys_reset    &trans          &bootloader   &bootloader   &trans          &mmv MOVE_RIGHT  &to 0            &to 1            &sys_reset       &soft_off        &bootloader      &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans           &trans           &trans           &trans           &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans           &trans
+&trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF
+&trans  &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &to 6            &trans           &trans           &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
+&trans  &sys_reset    &trans          &bootloader   &bootloader   &trans          &mmv MOVE_RIGHT  &to 0            &to 1            &sys_reset       &soft_off        &bootloader      &trans
+&trans  &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans           &trans           &trans           &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
             label = "SYS";
+        };
+
+        GAMING {
+            bindings = <
+&kp ESC    &kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &trans  &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &mo 5
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T     &trans  &kp Y     &kp U      &kp I      &kp O    &kp P     &kp BSLH
+&kp CAPS   &kp A      &kp S     &kp D     &kp F      &kp G     &trans  &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B     &trans  &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &trans
+&trans     &kp LCTRL  &kp LWIN  &kp LALT  &kp SPACE  &trans    &trans  &kp BSPC  &kp ENTER  &kp RALT   &trans   &kp DEL
+            >;
+
+            label = "GAMING";
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
     };
 };
