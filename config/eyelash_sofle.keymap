@@ -126,12 +126,6 @@
     combos {
         compatible = "zmk,combos";
 
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <>;
-            layers = <0 1>;
-        };
-
         enter {
             bindings = <&kp ENTER>;
             key-positions = <31 30>;
@@ -238,7 +232,7 @@
 &kp ESC       &kp Q               &kp W               &kp E               &kp R               &kp T                 &kp DOWN_ARROW   &kp Y               &kp U               &kp I               &kp O               &kp P                 &kp APOS
 &kp TAB       &hm_l LEFT_GUI A    &hm_l LEFT_ALT S    &hm_l LSHIFT D      &hm_l LCTRL F       &kp G                 &kp LEFT_ARROW   &kp H               &hm_r RCTRL J       &hm_r RSHIFT K      &hm_r LALT L        &hm_r RIGHT_GUI SEMI  &kp BACKSPACE
 &shift_dance  &kp Z               &kp X               &kp C               &kp V               &kp B                 &kp RIGHT_ARROW  &kp N               &kp M               &kp COMMA           &kp DOT             &kp FSLH              &shift_dance_right
-&kp C_MUTE    &kp LCTRL           &kp LALT            &shift_dance        &kp SPACE           &mo 3                 &kp ENTER        &kp BACKSPACE       &lt 3 ENTER         &sl 4               &kp RALT            &tog 5
+&kp C_MUTE    &kp LCTRL           &kp LALT            &shift_dance        &kp SPACE           &mo 3                 &kp ENTER        &sl 4               &lt 3 ENTER         &sl 4               &kp RALT            &tog 5
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -247,9 +241,9 @@
 
         COLEMAK {
             bindings = <
-&trans  &trans            &trans        &trans          &trans         &trans    &trans  &trans  &trans         &trans          &trans        &trans             &mo 6
-&trans  &kp Q             &kp W         &kp F           &kp P          &kp B     &trans  &kp J   &kp L          &kp U           &kp Y         &mt COLON SEMI     &kp APOS
-&trans  &hm_l LEFT_GUI A  &hm_l LALT R  &hm_l LSHIFT S  &hm_l LCTRL T  &kp G     &trans  &kp M   &hm_r RCTRL N  &hm_r RSHIFT E  &hm_r LALT I  &hm_r RIGHT_GUI O  &kp BACKSPACE
+&trans  &trans            &trans        &trans          &trans         &trans    &trans  &trans  &trans         &trans          &trans        &trans             &trans
+&trans  &kp Q             &kp W         &kp F           &kp P          &kp B     &trans  &kp J   &kp L          &kp U           &kp Y         &mt COLON SEMI     &trans
+&trans  &hm_l LEFT_GUI A  &hm_l LALT R  &hm_l LSHIFT S  &hm_l LCTRL T  &kp G     &trans  &kp M   &hm_r RCTRL N  &hm_r RSHIFT E  &hm_r LALT I  &hm_r RIGHT_GUI O  &trans
 &trans  &kp Z             &kp X         &kp C           &kp D          &kp V     &trans  &kp K   &kp H          &kp COMMA       &kp DOT       &kp FSLH           &trans
 &trans  &trans            &trans        &trans          &trans         &trans    &trans  &trans  &trans         &trans          &trans        &trans
             >;
