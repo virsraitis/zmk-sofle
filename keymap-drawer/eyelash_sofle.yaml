@@ -294,9 +294,9 @@ layers:
   - ':'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&macro_underscore'
+  - '&macro_copy'
+  - '&macro_paste'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -523,24 +523,6 @@ combos:
 - p: [31, 30]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [QWERTY, COLEMAK]
-- p: [27, 28]
-  k: {t: '`', s: '~'}
-  l: [QWERTY, COLEMAK]
-- p: [40, 41]
-  k: '~'
-  l: [QWERTY, COLEMAK]
-- p: [34, 35]
-  k: _
-  l: [QWERTY, COLEMAK]
-- p: [21, 22]
-  k: {t: '-', s: _}
-  l: [QWERTY, COLEMAK]
-- p: [35, 36]
-  k: +
-  l: [QWERTY, COLEMAK]
-- p: [22, 23]
-  k: {t: '=', s: +}
-  l: [QWERTY, COLEMAK]
 - p: [41, 42]
   k: Ctl+C
   l: [QWERTY, COLEMAK]
@@ -550,21 +532,12 @@ combos:
 - p: [43, 41]
   k: Ctl+X
   l: [QWERTY, COLEMAK]
-- p: [34, 33]
-  k: KP SLASH
-  l: [QWERTY, COLEMAK]
-- p: [46, 47]
-  k: {t: \, s: '|'}
-  l: [QWERTY, COLEMAK]
-- p: [12, 25]
-  k: {t: ']', s: '}'}
-  l: [QWERTY, COLEMAK]
-- p: [11, 24]
-  k: {t: '[', s: '{'}
-  l: [QWERTY, COLEMAK]
 - p: [36, 37]
   k: '?'
   l: [QWERTY, COLEMAK]
 - p: [44, 43]
   k: Alt+V
+  l: [QWERTY, COLEMAK]
+- p: [31, 44]
+  k: {t: NUM, h: toggle}
   l: [QWERTY, COLEMAK]
