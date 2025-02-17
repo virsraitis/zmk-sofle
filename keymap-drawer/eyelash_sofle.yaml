@@ -56,7 +56,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - '&shift_dance'
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: SYM}
   - NAV
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: LATVIAN, h: '$$mdi:gesture-tap-hold$$'}
@@ -224,8 +224,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+A
   - AltGr+R
-  - {t: AltGr+S, type: held alternate}
-  - {type: held alternate}
+  - AltGr+S
+  - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+G
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -260,8 +260,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   NUM:
-  - {t: NUM, h: toggle}
-  - {t: NUM, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -274,11 +272,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: NUM, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - ':'
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - {t: NUM, h: toggle}
+  - {t: ;, s: ':'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -291,7 +291,7 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - {t: NUM, h: toggle}
+  - ':'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -300,7 +300,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: NUM, h: toggle}
+  - KP DOT
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -317,6 +317,71 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  SYM:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '{'
+  - <
+  - {t: '[', s: '{'}
+  - (
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - )
+  - {t: ']', s: '}'}
+  - '>'
+  - '}'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '~'
+  - {t: '`', s: '~'}
+  - '"'
+  - <
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: /, s: '?'}
+  - _
+  - KP PLUS
+  - KP EQUAL
+  - '?'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '|'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: \, s: '|'}
+  - {t: '-', s: _}
+  - KP PLUS
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -497,11 +562,8 @@ combos:
 - p: [11, 24]
   k: {t: '[', s: '{'}
   l: [QWERTY, COLEMAK]
-- p: [50, 49]
+- p: [36, 37]
   k: '?'
-  l: [QWERTY, COLEMAK]
-- p: [30, 29]
-  k: {t: LATVIAN, h: '$$mdi:gesture-tap-hold$$'}
   l: [QWERTY, COLEMAK]
 - p: [44, 43]
   k: Alt+V
