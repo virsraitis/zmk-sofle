@@ -136,6 +136,7 @@
             #binding-cells = <1>;
             release-after-ms = <4000>;
             ignore-modifiers;
+            quick-release;
         };
     };
 
@@ -260,16 +261,10 @@
 
         question_mark {
             bindings = <&kp QUESTION>;
-            key-positions = <50 49>;
+            key-positions = <36 37>;
             layers = <0 1>;
             timeout-ms = <70>;
             require-prior-idle-ms = <150>;
-        };
-
-        sticky_latvian {
-            bindings = <&sl 3>;
-            key-positions = <30 29>;
-            layers = <0 1>;
         };
 
         paste_list {
@@ -286,11 +281,11 @@
 
         QWERTY {
             bindings = <
-&kp GRAVE          &num_tap LS(N1) N1  &num_tap LS(N2) N2  &num_tap LS(N3) N3  &num_tap LS(N4) N4  &num_tap LS(N5) N5    &kp UP_ARROW     &num_tap LS(N6) N6  &num_tap LS(N7) N7  &num_tap LS(N8) N8  &num_tap LS(N9) N9  &num_tap LS(N0) N0    &mo 5
+&kp GRAVE          &num_tap LS(N1) N1  &num_tap LS(N2) N2  &num_tap LS(N3) N3  &num_tap LS(N4) N4  &num_tap LS(N5) N5    &kp UP_ARROW     &num_tap LS(N6) N6  &num_tap LS(N7) N7  &num_tap LS(N8) N8  &num_tap LS(N9) N9  &num_tap LS(N0) N0    &mo 6
 &kp ESC            &kp Q               &kp W               &kp E               &kp R               &kp T                 &kp DOWN_ARROW   &kp Y               &kp U               &kp I               &kp O               &kp P                 &kp APOS
 &kp TAB            &hm_l LEFT_GUI A    &hm_l LEFT_ALT S    &hm_l LSHIFT D      &hm_l LCTRL F       &kp G                 &kp LEFT_ARROW   &kp H               &hm_r RCTRL J       &hm_r RSHIFT K      &hm_r LALT L        &hm_r RIGHT_GUI SEMI  &kp BACKSPACE
 &td_gui_caps_lock  &kp Z               &kp X               &kp C               &kp V               &kp B                 &kp RIGHT_ARROW  &kp N               &kp M               &kp COMMA           &kp DOT             &kp FSLH              &shift_dance_right
-&kp C_MUTE         &kp LCTRL           &kp LALT            &shift_dance        &kp SPACE           &mo 2                 &kp ENTER        &sl 3               &lt 2 ENTER         &shift_dance_right  &kp RALT            &tog 4
+&kp C_MUTE         &kp LCTRL           &kp LALT            &shift_dance        &lt 5 SPACE         &mo 2                 &kp ENTER        &sl 3               &lt 2 ENTER         &shift_dance_right  &kp RALT            &tog 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -337,21 +332,33 @@
 
         NUM {
             bindings = <
-&tog 4  &tog 4  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &tog 4  &kp N7  &kp N8  &kp N9  &tog 4    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N0  &kp N4  &kp N5  &kp N6  &tog 4    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &tog 4  &kp N1  &kp N2  &kp N3  &tog 4    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp COLON   &kp N7  &kp N8  &kp N9  &kp SEMICOLON    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0      &kp N4  &kp N5  &kp N6  &kp COLON        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp KP_DOT  &kp N1  &kp N2  &kp N3  &tog 4           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "NUM";
+        };
+
+        SYM {
+            bindings = <
+&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH           &kp DOLLAR            &kp PERCENT    &trans  &kp CARET  &kp AMPERSAND          &kp STAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp LEFT_BRACE   &kp LESS_THAN  &kp LBKT           &kp LEFT_PARENTHESIS  &trans         &trans  &trans     &kp RIGHT_PARENTHESIS  &kp RBKT     &kp GREATER_THAN      &kp RIGHT_BRACE        &trans
+&trans  &kp TILDE        &kp GRAVE      &kp DOUBLE_QUOTES  &kp APOSTROPHE        &trans         &trans  &kp FSLH   &kp UNDER              &kp KP_PLUS  &kp KP_EQUAL          &kp QUESTION           &trans
+&trans  &trans           &trans         &trans             &kp PIPE              &trans         &trans  &kp BSLH   &kp MINUS              &kp KP_PLUS  &trans                &trans                 &trans
+&trans  &trans           &trans         &trans             &trans                &trans         &trans  &trans     &trans                 &trans       &trans                &trans
+            >;
+
+            label = "SYM";
         };
 
         SYS {
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans           &trans
 &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF
-&trans  &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &to 6            &trans           &trans           &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
+&trans  &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &to 7            &trans           &trans           &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
 &trans  &sys_reset    &trans          &bootloader   &bootloader   &trans          &mmv MOVE_RIGHT  &to 0            &to 1            &sys_reset       &soft_off        &bootloader      &trans
 &trans  &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans           &trans           &trans           &trans           &trans
             >;
@@ -362,7 +369,7 @@
 
         GAMING {
             bindings = <
-&kp ESC    &kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &trans  &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &mo 5
+&kp ESC    &kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &trans  &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &mo 6
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T     &trans  &kp Y     &kp U      &kp I      &kp O    &kp P     &kp BSLH
 &kp CAPS   &kp A      &kp S     &kp D     &kp F      &kp G     &trans  &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp APOS
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B     &trans  &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &trans
