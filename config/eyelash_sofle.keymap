@@ -292,11 +292,11 @@
 
         LATVIAN {
             bindings = <
-&trans  &trans     &trans     &trans     &trans  &trans       &trans  &trans     &trans     &trans     &trans     &trans     &trans
-&trans  &trans     &trans     &trans     &trans  &trans       &trans  &trans     &kp RA(L)  &kp RA(U)  &trans     &trans     &trans
-&trans  &kp RA(A)  &kp RA(R)  &kp RA(S)  &trans  &kp RA(G)    &trans  &trans     &kp RA(N)  &kp RA(E)  &kp RA(I)  &kp RA(O)  &trans
-&trans  &kp RA(Z)  &trans     &kp RA(C)  &trans  &trans       &trans  &kp RA(K)  &trans     &trans     &trans     &trans     &trans
-&trans  &trans     &trans     &trans     &trans  &trans       &trans  &trans     &trans     &trans     &trans     &trans
+&trans  &trans     &trans     &trans            &trans  &trans       &trans  &trans     &trans     &trans     &trans     &trans     &trans
+&trans  &trans     &trans     &kp RA(NUMBER_4)  &trans  &trans       &trans  &trans     &kp RA(L)  &kp RA(U)  &trans     &trans     &trans
+&trans  &kp RA(A)  &kp RA(R)  &kp RA(S)         &trans  &kp RA(G)    &trans  &trans     &kp RA(N)  &kp RA(E)  &kp RA(I)  &kp RA(O)  &trans
+&trans  &kp RA(Z)  &trans     &kp RA(C)         &trans  &trans       &trans  &kp RA(K)  &trans     &trans     &trans     &trans     &trans
+&trans  &trans     &trans     &trans            &trans  &trans       &trans  &trans     &trans     &trans     &trans     &trans
             >;
 
             label = "LATVIAN";
@@ -316,11 +316,11 @@
 
         SYM {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH           &kp DOLLAR            &kp PERCENT    &trans  &kp CARET  &kp AMPERSAND          &kp STAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp LEFT_BRACE   &kp LESS_THAN  &kp LBKT           &kp LEFT_PARENTHESIS  &trans         &trans  &trans     &kp RIGHT_PARENTHESIS  &kp RBKT     &kp GREATER_THAN      &kp RIGHT_BRACE        &trans
-&trans  &kp TILDE        &kp GRAVE      &kp DOUBLE_QUOTES  &kp APOSTROPHE        &trans         &trans  &kp FSLH   &kp UNDER              &kp KP_PLUS  &kp KP_EQUAL          &kp QUESTION           &trans
-&trans  &trans           &trans         &trans             &kp PIPE              &trans         &trans  &kp BSLH   &kp MINUS              &kp KP_PLUS  &trans                &trans                 &trans
-&trans  &trans           &trans         &trans             &trans                &trans         &trans  &trans     &trans                 &trans       &trans                &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH           &kp DOLLAR            &kp PERCENT       &trans  &kp CARET        &kp AMPERSAND          &kp STAR       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans           &kp LESS_THAN  &kp LBKT           &kp LEFT_PARENTHESIS  &kp LEFT_BRACE    &trans  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RBKT       &kp GREATER_THAN      &kp COLON              &trans
+&trans  &kp TILDE        &kp GRAVE      &kp DOUBLE_QUOTES  &kp APOSTROPHE        &trans            &trans  &kp FSLH         &kp UNDER              &kp PLUS       &kp EQUAL             &kp QUESTION           &trans
+&trans  &kp EXCL         &kp AT         &kp HASH           &kp PIPE              &trans            &trans  &kp BSLH         &kp MINUS              &kp RA(MINUS)  &trans                &trans                 &trans
+&trans  &trans           &trans         &trans             &trans                &trans            &trans  &trans           &trans                 &trans         &trans                &trans
             >;
 
             label = "SYM";
