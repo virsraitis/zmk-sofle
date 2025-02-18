@@ -211,7 +211,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+4
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -339,17 +339,17 @@ layers:
   - )
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '{'
+  - {t: '$$mdi:transfer$$', type: trans}
   - <
   - {t: '[', s: '{'}
   - (
+  - '{'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '}'
   - )
   - {t: ']', s: '}'}
   - '>'
-  - '}'
+  - ':'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
@@ -360,20 +360,20 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: /, s: '?'}
   - _
-  - KP PLUS
-  - KP EQUAL
+  - +
+  - {t: '=', s: +}
   - '?'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '!'
+  - '@'
+  - '#'
   - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: \, s: '|'}
   - {t: '-', s: _}
-  - KP PLUS
+  - {t: AltGr+-, s: AltGr+_}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
