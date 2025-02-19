@@ -12,7 +12,7 @@ layers:
   - {t: '8', h: Sft+8, s: '*'}
   - {t: '9', h: Sft+9, s: (}
   - {t: '0', h: Sft+0, s: )}
-  - SYS
+  - SYSTEM
   - $$mdi:keyboard-esc$$
   - Q
   - W
@@ -356,7 +356,7 @@ layers:
   - {t: '`', s: '~'}
   - '"'
   - <
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '!'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: /, s: '?'}
   - _
@@ -365,17 +365,17 @@ layers:
   - '?'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '!'
-  - '@'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '#'
   - '|'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '@'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: \, s: '|'}
   - {t: '-', s: _}
   - {t: AltGr+-, s: AltGr+_}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '?'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -389,7 +389,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  SYS:
+  SYSTEM:
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -455,7 +455,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   GAMING:
-  - $$mdi:keyboard-esc$$
+  - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -467,8 +467,8 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - SYS
-  - $$mdi:keyboard-tab$$
+  - SYSTEM
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
@@ -480,8 +480,8 @@ layers:
   - I
   - O
   - P
-  - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '''', s: '"'}
+  - $$mdi:keyboard-tab$$
   - A
   - S
   - D
@@ -493,7 +493,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - .
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -506,7 +506,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
   - LWIN
@@ -514,7 +514,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -531,9 +531,6 @@ combos:
   l: [QWERTY, COLEMAK]
 - p: [43, 41]
   k: Ctl+X
-  l: [QWERTY, COLEMAK]
-- p: [36, 37]
-  k: '?'
   l: [QWERTY, COLEMAK]
 - p: [44, 43]
   k: Alt+V
