@@ -109,7 +109,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_DANCE_RIGHT";
             #binding-cells = <0>;
-            bindings = <&sk RSHIFT>, <&caps_word>;
+            bindings = <&longer_sticky RSHIFT>, <&caps_word>;
 
             tapping-term-ms = <200>;
         };
@@ -176,14 +176,6 @@
         cut {
             bindings = <&kp LC(X)>;
             key-positions = <43 41>;
-            layers = <0 1>;
-            timeout-ms = <70>;
-            require-prior-idle-ms = <150>;
-        };
-
-        question_mark {
-            bindings = <&kp QUESTION>;
-            key-positions = <36 37>;
             layers = <0 1>;
             timeout-ms = <70>;
             require-prior-idle-ms = <150>;
@@ -316,17 +308,17 @@
 
         SYM {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH           &kp DOLLAR            &kp PERCENT       &trans  &kp CARET        &kp AMPERSAND          &kp STAR       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans           &kp LESS_THAN  &kp LBKT           &kp LEFT_PARENTHESIS  &kp LEFT_BRACE    &trans  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RBKT       &kp GREATER_THAN      &kp COLON              &trans
-&trans  &kp TILDE        &kp GRAVE      &kp DOUBLE_QUOTES  &kp APOSTROPHE        &trans            &trans  &kp FSLH         &kp UNDER              &kp PLUS       &kp EQUAL             &kp QUESTION           &trans
-&trans  &kp EXCL         &kp AT         &kp HASH           &kp PIPE              &trans            &trans  &kp BSLH         &kp MINUS              &kp RA(MINUS)  &trans                &trans                 &trans
-&trans  &trans           &trans         &trans             &trans                &trans            &trans  &trans           &trans                 &trans         &trans                &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH           &kp DOLLAR            &kp PERCENT        &trans  &kp CARET        &kp AMPERSAND          &kp STAR       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans           &kp LESS_THAN  &kp LBKT           &kp LEFT_PARENTHESIS  &kp LEFT_BRACE     &trans  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RBKT       &kp GREATER_THAN      &kp COLON              &trans
+&trans  &kp TILDE        &kp GRAVE      &kp DOUBLE_QUOTES  &kp APOSTROPHE        &kp EXCLAMATION    &trans  &kp FSLH         &kp UNDER              &kp PLUS       &kp EQUAL             &kp QUESTION           &trans
+&trans  &trans           &trans         &kp HASH           &kp PIPE              &kp AT_SIGN        &trans  &kp BSLH         &kp MINUS              &kp RA(MINUS)  &trans                &kp QUESTION           &trans
+&trans  &trans           &trans         &trans             &trans                &trans             &trans  &trans           &trans                 &trans         &trans                &trans
             >;
 
             label = "SYM";
         };
 
-        SYS {
+        SYSTEM {
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans           &trans
 &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF
@@ -336,16 +328,16 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-            label = "SYS";
+            label = "SYSTEM";
         };
 
         GAMING {
             bindings = <
-&kp ESC    &kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &trans  &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &mo 6
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T     &trans  &kp Y     &kp U      &kp I      &kp O    &kp P     &kp BSLH
-&kp CAPS   &kp A      &kp S     &kp D     &kp F      &kp G     &trans  &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B     &trans  &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &trans
-&trans     &kp LCTRL  &kp LWIN  &kp LALT  &kp SPACE  &trans    &trans  &kp BSPC  &kp ENTER  &kp RALT   &trans   &kp DEL
+&kp GRAVE   &kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &trans  &kp N6    &kp N7     &kp N8     &kp N9   &kp N0    &mo 6
+&kp ESCAPE  &kp Q      &kp W     &kp E     &kp R      &kp T     &trans  &kp Y     &kp U      &kp I      &kp O    &kp P     &kp SINGLE_QUOTE
+&kp TAB     &kp A      &kp S     &kp D     &kp F      &kp G     &trans  &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp BACKSPACE
+&kp LSHFT   &kp Z      &kp X     &kp C     &kp V      &kp B     &trans  &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
+&trans      &kp LCTRL  &kp LWIN  &kp LALT  &kp SPACE  &trans    &trans  &kp RALT  &kp ENTER  &kp RALT   &trans   &kp DEL
             >;
 
             label = "GAMING";
