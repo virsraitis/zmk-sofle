@@ -134,7 +134,7 @@
             label = "LONGER_STICKY";
             bindings = <&sk>;
             #binding-cells = <1>;
-            release-after-ms = <4000>;
+            release-after-ms = <10000>;
             ignore-modifiers;
             quick-release;
         };
