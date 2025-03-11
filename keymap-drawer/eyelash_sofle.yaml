@@ -524,16 +524,16 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [QWERTY, COLEMAK]
 - p: [41, 42]
-  k: Ctl+C
+  k: '&p_mcr_lctrl C'
   l: [QWERTY, COLEMAK]
 - p: [42, 43]
-  k: Ctl+V
+  k: '&p_mcr_lctrl V'
   l: [QWERTY, COLEMAK]
 - p: [43, 41]
-  k: Ctl+X
+  k: '&p_mcr_lctrl X'
   l: [QWERTY, COLEMAK]
 - p: [44, 43]
-  k: Alt+V
+  k: '&p_mcr_lalt V'
   l: [QWERTY, COLEMAK]
 - p: [31, 44]
   k: {t: NUM, h: toggle}
