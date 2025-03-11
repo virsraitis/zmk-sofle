@@ -157,7 +157,7 @@
         };
 
         copy {
-            bindings = <&kp LC(C)>;
+            bindings = <&p_mcr_lctrl C>;
             key-positions = <41 42>;
             layers = <0 1>;
             timeout-ms = <70>;
@@ -165,13 +165,13 @@
         };
 
         paste {
-            bindings = <&kp RC(V)>;
+            bindings = <&p_mcr_lctrl V>;
             key-positions = <42 43>;
             layers = <0 1>;
         };
 
         cut {
-            bindings = <&kp LC(X)>;
+            bindings = <&p_mcr_lctrl X>;
             key-positions = <43 41>;
             layers = <0 1>;
             timeout-ms = <70>;
@@ -179,7 +179,7 @@
         };
 
         paste_list {
-            bindings = <&kp LA(V)>;
+            bindings = <&p_mcr_lalt V>;
             key-positions = <44 43>;
             layers = <0 1>;
             timeout-ms = <70>;
