@@ -61,7 +61,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: LATVIAN, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-return$$', h: NAV}
-  - '&shift_dance_right'
+  - $$mdi:apple-keyboard-caps$$
   - $$mdi:apple-keyboard-option$$
   - {t: NUM, h: toggle}
   COLEMAK:
@@ -142,10 +142,10 @@ layers:
   - F8
   - F9
   - F10
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - F11
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-up$$
@@ -155,7 +155,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - END
   - Ctl+HOME
-  - F12
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -229,7 +229,7 @@ layers:
   - AltGr+G
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+N
+  - '&p_mcr_ralt N'
   - AltGr+E
   - AltGr+I
   - AltGr+O
@@ -294,7 +294,7 @@ layers:
   - ':'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&macro_underscore'
+  - '&mcr_underscore'
   - '&macro_copy'
   - '&macro_paste'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -359,7 +359,7 @@ layers:
   - '!'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: /, s: '?'}
-  - _
+  - '&p_mcr_lshift MINUS'
   - +
   - {t: '=', s: +}
   - '?'
