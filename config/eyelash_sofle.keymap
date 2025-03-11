@@ -134,7 +134,6 @@
             #binding-cells = <1>;
             release-after-ms = <10000>;
             ignore-modifiers;
-            quick-release;
         };
     };
 
@@ -325,10 +324,10 @@
 
         NAV {
             bindings = <
-&kp ESC     &kp F1   &kp F2   &kp F3  &kp F4      &kp F5            &mmv MOVE_UP     &kp F6         &kp F7      &kp F8      &kp F9     &kp F10       &trans
-&trans      &kp F11  &kp F12  &trans  &trans      &msc SCRL_UP      &mmv MOVE_DOWN   &kp PG_UP      &kp HOME    &kp UP      &kp END    &kp LC(HOME)  &trans
-&trans      &trans   &trans   &trans  &trans      &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp PG_DN      &kp LEFT    &kp DOWN    &kp RIGHT  &kp LC(END)   &trans
-&trans      &trans   &trans   &trans  &kp DELETE  &kp BACKSPACE     &mmv MOVE_RIGHT  &kp BACKSPACE  &kp DELETE  &kp INSERT  &trans     &trans        &trans
+&kp ESC     &kp F1   &kp F2   &kp F3  &kp F4      &kp F5            &mmv MOVE_UP     &kp F6         &kp F7      &kp F8      &kp F9     &kp F10            &trans
+&trans      &kp F11  &kp F12  &trans  &trans      &msc SCRL_UP      &mmv MOVE_DOWN   &kp PG_UP      &kp HOME    &kp UP      &kp END    &p_mcr_lctrl HOME  &trans
+&trans      &trans   &trans   &trans  &trans      &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp PG_DN      &kp LEFT    &kp DOWN    &kp RIGHT  &p_mcr_lctrl END   &trans
+&trans      &trans   &trans   &trans  &kp DELETE  &kp BACKSPACE     &mmv MOVE_RIGHT  &kp BACKSPACE  &kp DELETE  &kp INSERT  &trans     &trans             &trans
 &kp C_MUTE  &trans   &trans   &trans  &trans      &trans            &mkp LCLK        &trans         &trans      &trans      &trans     &trans
             >;
 
@@ -338,11 +337,11 @@
 
         LATVIAN {
             bindings = <
-&trans  &trans     &trans     &trans            &trans  &trans       &trans  &trans     &trans         &trans     &trans     &trans     &trans
-&trans  &trans     &trans     &kp RA(NUMBER_4)  &trans  &trans       &trans  &trans     &kp RA(L)      &kp RA(U)  &trans     &trans     &trans
-&trans  &kp RA(A)  &kp RA(R)  &kp RA(S)         &trans  &kp RA(G)    &trans  &trans     &p_mcr_ralt N  &kp RA(E)  &kp RA(I)  &kp RA(O)  &trans
-&trans  &kp RA(Z)  &trans     &kp RA(C)         &trans  &trans       &trans  &kp RA(K)  &trans         &trans     &trans     &trans     &trans
-&trans  &trans     &trans     &trans            &trans  &trans       &trans  &trans     &trans         &trans     &trans     &trans
+&trans  &trans         &trans         &trans                &trans  &trans           &trans  &trans         &trans         &trans         &trans         &trans         &trans
+&trans  &trans         &trans         &p_mcr_ralt NUMBER_4  &trans  &trans           &trans  &trans         &p_mcr_ralt L  &p_mcr_ralt U  &trans         &trans         &trans
+&trans  &p_mcr_ralt A  &p_mcr_ralt R  &p_mcr_ralt S         &trans  &p_mcr_ralt G    &trans  &trans         &p_mcr_ralt N  &p_mcr_ralt E  &p_mcr_ralt I  &p_mcr_ralt O  &trans
+&trans  &p_mcr_ralt Z  &trans         &p_mcr_ralt C         &trans  &trans           &trans  &p_mcr_ralt K  &trans         &trans         &trans         &trans         &trans
+&trans  &trans         &trans         &trans                &trans  &trans           &trans  &trans         &trans         &trans         &trans         &trans
             >;
 
             label = "LATVIAN";
@@ -362,11 +361,11 @@
 
         SYM {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH           &kp DOLLAR            &kp PERCENT        &trans  &kp CARET        &kp AMPERSAND          &kp STAR       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans           &kp LESS_THAN  &kp LBKT           &kp LEFT_PARENTHESIS  &kp LEFT_BRACE     &trans  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RBKT       &kp GREATER_THAN      &kp COLON              &trans
-&trans  &kp TILDE        &kp GRAVE      &kp DOUBLE_QUOTES  &kp APOSTROPHE        &kp EXCLAMATION    &trans  &kp FSLH         &p_mcr_lshift MINUS    &kp PLUS       &kp EQUAL             &kp QUESTION           &trans
-&trans  &trans           &trans         &kp HASH           &kp PIPE              &kp AT_SIGN        &trans  &kp BSLH         &kp MINUS              &kp RA(MINUS)  &trans                &kp QUESTION           &trans
-&trans  &trans           &trans         &trans             &trans                &trans             &trans  &trans           &trans                 &trans         &trans                &trans
+&trans  &p_mcr_lshift N1     &p_mcr_lshift N2     &p_mcr_lshift N3            &p_mcr_lshift N4         &p_mcr_lshift N5              &trans  &p_mcr_lshift N6             &p_mcr_lshift N7     &p_mcr_lshift N8     &p_mcr_lshift N9      &p_mcr_lshift N0         &trans
+&trans  &trans               &p_mcr_lshift COMMA  &kp LBKT                    &p_mcr_lshift N9         &p_mcr_lshift LEFT_BRACKET    &trans  &p_mcr_lshift RIGHT_BRACKET  &p_mcr_lshift N0     &kp RBKT             &p_mcr_lshift PERIOD  &p_mcr_lshift SEMICOLON  &trans
+&trans  &p_mcr_lshift GRAVE  &kp GRAVE            &p_mcr_lshift SINGLE_QUOTE  &kp APOSTROPHE           &p_mcr_lshift N1              &trans  &kp FSLH                     &p_mcr_lshift MINUS  &p_mcr_lshift EQUAL  &kp EQUAL             &p_mcr_lshift SLASH      &trans
+&trans  &trans               &trans               &p_mcr_lshift N3            &p_mcr_lshift BACKSLASH  &p_mcr_lshift N2              &trans  &kp BSLH                     &kp MINUS            &p_mcr_ralt MINUS    &trans                &p_mcr_lshift SLASH      &trans
+&trans  &trans               &trans               &trans                      &trans                   &trans                        &trans  &trans                       &trans               &trans               &trans                &trans
             >;
 
             label = "SYM";
@@ -391,7 +390,7 @@
 &kp ESCAPE  &kp Q      &kp W     &kp E     &kp R      &kp T     &trans  &kp Y     &kp U      &kp I      &kp O    &kp P     &kp SINGLE_QUOTE
 &kp TAB     &kp A      &kp S     &kp D     &kp F      &kp G     &trans  &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp BACKSPACE
 &kp LSHFT   &kp Z      &kp X     &kp C     &kp V      &kp B     &trans  &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-&trans      &kp LCTRL  &kp LWIN  &kp LALT  &kp SPACE  &trans    &trans  &kp RALT  &kp ENTER  &kp RALT   &trans   &kp DEL
+&trans      &kp LCTRL  &kp LWIN  &kp LALT  &kp SPACE  &trans    &trans  &kp RALT  &kp ENTER  &kp RALT   &to 1    &kp DEL
             >;
 
             label = "GAMING";
