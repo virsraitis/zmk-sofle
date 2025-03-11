@@ -154,7 +154,7 @@ layers:
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - Ctl+HOME
+  - '&p_mcr_lctrl HOME'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -167,7 +167,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - Ctl+END
+  - '&p_mcr_lctrl END'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -211,37 +211,37 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+4
+  - '&p_mcr_ralt NUMBER_4'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+L
-  - AltGr+U
+  - '&p_mcr_ralt L'
+  - '&p_mcr_ralt U'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+A
-  - AltGr+R
-  - AltGr+S
+  - '&p_mcr_ralt A'
+  - '&p_mcr_ralt R'
+  - '&p_mcr_ralt S'
   - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+G
+  - '&p_mcr_ralt G'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&p_mcr_ralt N'
-  - AltGr+E
-  - AltGr+I
-  - AltGr+O
+  - '&p_mcr_ralt E'
+  - '&p_mcr_ralt I'
+  - '&p_mcr_ralt O'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+Z
+  - '&p_mcr_ralt Z'
   - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+C
+  - '&p_mcr_ralt C'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - AltGr+K
+  - '&p_mcr_ralt K'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -326,56 +326,56 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   SYM:
   - {t: '$$mdi:transfer$$', type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - '&p_mcr_lshift N1'
+  - '&p_mcr_lshift N2'
+  - '&p_mcr_lshift N3'
+  - '&p_mcr_lshift N4'
+  - '&p_mcr_lshift N5'
   - {t: '$$mdi:transfer$$', type: trans}
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
+  - '&p_mcr_lshift N6'
+  - '&p_mcr_lshift N7'
+  - '&p_mcr_lshift N8'
+  - '&p_mcr_lshift N9'
+  - '&p_mcr_lshift N0'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - <
+  - '&p_mcr_lshift COMMA'
   - {t: '[', s: '{'}
-  - (
-  - '{'
+  - '&p_mcr_lshift N9'
+  - '&p_mcr_lshift LEFT_BRACKET'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '}'
-  - )
+  - '&p_mcr_lshift RIGHT_BRACKET'
+  - '&p_mcr_lshift N0'
   - {t: ']', s: '}'}
-  - '>'
-  - ':'
+  - '&p_mcr_lshift PERIOD'
+  - '&p_mcr_lshift SEMICOLON'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
+  - '&p_mcr_lshift GRAVE'
   - {t: '`', s: '~'}
-  - '"'
+  - '&p_mcr_lshift SINGLE_QUOTE'
   - <
-  - '!'
+  - '&p_mcr_lshift N1'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: /, s: '?'}
   - '&p_mcr_lshift MINUS'
-  - +
+  - '&p_mcr_lshift EQUAL'
   - {t: '=', s: +}
-  - '?'
+  - '&p_mcr_lshift SLASH'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '#'
-  - '|'
-  - '@'
+  - '&p_mcr_lshift N3'
+  - '&p_mcr_lshift BACKSLASH'
+  - '&p_mcr_lshift N2'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: \, s: '|'}
   - {t: '-', s: _}
-  - {t: AltGr+-, s: AltGr+_}
+  - '&p_mcr_ralt MINUS'
   - {t: '$$mdi:transfer$$', type: trans}
-  - '?'
+  - '&p_mcr_lshift SLASH'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -517,7 +517,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: COLEMAK, h: toggle}
   - $$mdi:backspace-reverse-outline$$
 combos:
 - p: [31, 30]
