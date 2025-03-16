@@ -1,5 +1,5 @@
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
 #include <input/processors.dtsi>
 #include "zmk-helpers/helper.h"
@@ -9,51 +9,43 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/outputs.h>
 
-// Left-hand keys.
 
-#define KEYS_L 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42
+&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
-// Right-hand keys.
+&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
-#define KEYS_R 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49
+&msc {
+    acceleration-exponent = <1>;      // 0
+    time-to-max-speed-ms = <100>;       // 300
+    delay-ms = <0>;                   // 0
+};
 
-// Thumb keys.
+&mmv {
+    time-to-max-speed-ms = <500>;
+    acceleration-exponent = <1>;
+    trigger-period-ms = <16>;
+};
 
-#define THUMBS 50 51 52 53 54 55 56 57 58 59
-
-/*
-
-   &mmv_input_listener {
-       input-processors = <&zip_xy_scaler 2 1>;
-   };
-
-   &msc_input_listener {
-       input-processors = <&zip_xy_scaler 2 1>;
-   };
-
- */
-
-#define HM_TAPPING_TERM 280
-#define HM_TAPPING_TERM_FAST 200
-#define HM_PRIOR_IDLE 150
 
 / {
     behaviors {
         mmv {
-            acceleration-exponent = <1>;      // 1
-            time-to-max-speed-ms = <900>;    // 40
-            delay-ms = <0>;                   // 0
+            time-to-max-speed-ms = <500>;
+            acceleration-exponent = <1>;
+            trigger-period-ms = <16>;
         };
 
         msc {
             acceleration-exponent = <1>;      // 0
-            time-to-max-speed-ms = <400>;      // 500
-            delay-ms = <0>;                   //   10
+            time-to-max-speed-ms = <100>;       // 300
+            delay-ms = <0>;                   // 0
         };
 
         // https://github.com/urob/zmk-config#timeless-homerow-mods
@@ -142,7 +134,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-        tap-ms = <30>;
+        tap-ms = <100>;
     };
 
     combos {
