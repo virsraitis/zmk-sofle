@@ -342,22 +342,22 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&p_mcr_lshift COMMA'
-  - {t: '[', s: '{'}
-  - '&p_mcr_lshift N9'
-  - '&p_mcr_lshift LEFT_BRACKET'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&p_mcr_lshift LBKT'
   - '&p_mcr_lshift RIGHT_BRACKET'
+  - '&p_mcr_lshift N3'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&p_mcr_lshift N8'
+  - '&p_mcr_lshift N9'
   - '&p_mcr_lshift N0'
-  - {t: ']', s: '}'}
   - '&p_mcr_lshift PERIOD'
   - '&p_mcr_lshift SEMICOLON'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&p_mcr_ralt MINUS'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&p_mcr_lshift GRAVE'
   - {t: '`', s: '~'}
   - '&p_mcr_lshift SINGLE_QUOTE'
   - <
-  - '&p_mcr_lshift N1'
+  - '&p_mcr_lshift SEMICOLON'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: /, s: '?'}
   - '&p_mcr_lshift MINUS'
@@ -367,15 +367,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&p_mcr_lshift N3'
   - '&p_mcr_lshift BACKSLASH'
-  - '&p_mcr_lshift N2'
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - '&p_mcr_lshift GRAVE'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: \, s: '|'}
   - {t: '-', s: _}
-  - '&p_mcr_ralt MINUS'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&p_mcr_lshift COMMA'
+  - '&p_mcr_lshift PERIOD'
   - '&p_mcr_lshift SLASH'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
