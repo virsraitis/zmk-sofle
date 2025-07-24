@@ -349,11 +349,11 @@
 
         SYM {
             bindings = <
-&trans  &p_mcr_lshift N1     &p_mcr_lshift N2     &p_mcr_lshift N3            &p_mcr_lshift N4         &p_mcr_lshift N5              &trans  &p_mcr_lshift N6             &p_mcr_lshift N7     &p_mcr_lshift N8     &p_mcr_lshift N9      &p_mcr_lshift N0         &trans
-&trans  &trans               &p_mcr_lshift COMMA  &kp LBKT                    &p_mcr_lshift N9         &p_mcr_lshift LEFT_BRACKET    &trans  &p_mcr_lshift RIGHT_BRACKET  &p_mcr_lshift N0     &kp RBKT             &p_mcr_lshift PERIOD  &p_mcr_lshift SEMICOLON  &trans
-&trans  &p_mcr_lshift GRAVE  &kp GRAVE            &p_mcr_lshift SINGLE_QUOTE  &kp APOSTROPHE           &p_mcr_lshift N1              &trans  &kp FSLH                     &p_mcr_lshift MINUS  &p_mcr_lshift EQUAL  &kp EQUAL             &p_mcr_lshift SLASH      &trans
-&trans  &trans               &trans               &p_mcr_lshift N3            &p_mcr_lshift BACKSLASH  &p_mcr_lshift N2              &trans  &kp BSLH                     &kp MINUS            &p_mcr_ralt MINUS    &trans                &p_mcr_lshift SLASH      &trans
-&trans  &trans               &trans               &trans                      &trans                   &trans                        &trans  &trans                       &trans               &trans               &trans                &trans
+&trans  &p_mcr_lshift N1     &p_mcr_lshift N2         &p_mcr_lshift N3            &p_mcr_lshift N4             &p_mcr_lshift N5           &trans  &p_mcr_lshift N6  &p_mcr_lshift N7     &p_mcr_lshift N8     &p_mcr_lshift N9      &p_mcr_lshift N0         &trans
+&trans  &trans               &p_mcr_lshift COMMA      &p_mcr_lshift LBKT          &p_mcr_lshift RIGHT_BRACKET  &p_mcr_lshift N3           &trans  &p_mcr_lshift N8  &p_mcr_lshift N9     &p_mcr_lshift N0     &p_mcr_lshift PERIOD  &p_mcr_lshift SEMICOLON  &p_mcr_ralt MINUS
+&trans  &p_mcr_lshift GRAVE  &kp GRAVE                &p_mcr_lshift SINGLE_QUOTE  &kp APOSTROPHE               &p_mcr_lshift SEMICOLON    &trans  &kp FSLH          &p_mcr_lshift MINUS  &p_mcr_lshift EQUAL  &kp EQUAL             &p_mcr_lshift SLASH      &trans
+&trans  &trans               &p_mcr_lshift BACKSLASH  &kp LEFT_BRACKET            &kp RIGHT_BRACKET            &p_mcr_lshift GRAVE        &trans  &kp BSLH          &kp MINUS            &p_mcr_lshift COMMA  &p_mcr_lshift PERIOD  &p_mcr_lshift SLASH      &trans
+&trans  &trans               &trans                   &trans                      &trans                       &trans                     &trans  &trans            &trans               &trans               &trans                &trans
             >;
 
             label = "SYM";
