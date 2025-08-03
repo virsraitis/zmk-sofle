@@ -159,9 +159,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PLAY PAUSE
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
   - $$mdi:pan-down$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
