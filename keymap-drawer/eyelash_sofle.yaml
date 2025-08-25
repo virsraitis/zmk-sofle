@@ -40,7 +40,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: RIGHT GUI, s: ':'}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td_gui_caps_lock'
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
@@ -54,7 +54,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - '&shift_dance'
   - {t: '$$mdi:keyboard-space$$', h: SYM}
@@ -64,7 +64,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: NAV}
   - $$mdi:apple-keyboard-caps$$
   - $$mdi:apple-keyboard-option$$
-  - {t: NUM, h: toggle}
+  - Ins
   COLEMAK:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -517,7 +517,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-option$$
+  - {t: '-', s: _}
   - {t: COLEMAK, h: toggle}
   - $$mdi:backspace-reverse-outline$$
 combos:
