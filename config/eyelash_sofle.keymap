@@ -88,7 +88,7 @@
             #binding-cells = <0>;
             bindings = <&longer_sticky LSHFT>, <&caps_word>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
 
         shift_dance_right: shift_dance_right {
@@ -286,11 +286,11 @@
 
         QWERTY {
             bindings = <
-&kp GRAVE          &num_tap LS(N1) N1  &num_tap LS(N2) N2  &num_tap LS(N3) N3  &num_tap LS(N4) N4  &num_tap LS(N5) N5    &kp UP_ARROW     &num_tap LS(N6) N6  &num_tap LS(N7) N7  &num_tap LS(N8) N8  &num_tap LS(N9) N9  &num_tap LS(N0) N0    &mo 6
-&kp ESC            &kp Q               &kp W               &kp E               &kp R               &kp T                 &kp DOWN_ARROW   &kp Y               &kp U               &kp I               &kp O               &kp P                 &kp APOS
-&kp TAB            &hm_l LEFT_GUI A    &hm_l LEFT_ALT S    &hm_l LSHIFT D      &hm_l LCTRL F       &kp G                 &kp LEFT_ARROW   &kp H               &hm_r RCTRL J       &hm_r RSHIFT K      &hm_r LALT L        &hm_r RIGHT_GUI SEMI  &kp BACKSPACE
-&td_gui_caps_lock  &kp Z               &kp X               &kp C               &kp V               &kp B                 &kp RIGHT_ARROW  &kp N               &kp M               &kp COMMA           &kp DOT             &kp FSLH              &kp DELETE
-&kp C_MUTE         &kp LCTRL           &kp LALT            &shift_dance        &lt 5 SPACE         &mo 2                 &kp ENTER        &sl 3               &lt 2 ENTER         &kp CAPS            &kp RALT            &tog 4
+&kp GRAVE   &num_tap LS(N1) N1  &num_tap LS(N2) N2  &num_tap LS(N3) N3  &num_tap LS(N4) N4  &num_tap LS(N5) N5    &kp UP_ARROW     &num_tap LS(N6) N6  &num_tap LS(N7) N7  &num_tap LS(N8) N8  &num_tap LS(N9) N9  &num_tap LS(N0) N0    &mo 6
+&kp ESC     &kp Q               &kp W               &kp E               &kp R               &kp T                 &kp DOWN_ARROW   &kp Y               &kp U               &kp I               &kp O               &kp P                 &kp APOS
+&kp TAB     &hm_l LEFT_GUI A    &hm_l LEFT_ALT S    &hm_l LSHIFT D      &hm_l LCTRL F       &kp G                 &kp LEFT_ARROW   &kp H               &hm_r RCTRL J       &hm_r RSHIFT K      &hm_r LALT L        &hm_r RIGHT_GUI SEMI  &kp BACKSPACE
+&kp LCTRL   &kp Z               &kp X               &kp C               &kp V               &kp B                 &kp RIGHT_ARROW  &kp N               &kp M               &kp COMMA           &kp DOT             &kp FSLH              &kp DELETE
+&kp C_MUTE  &kp LEFT_GUI        &kp LALT            &shift_dance        &lt 5 SPACE         &mo 2                 &kp ENTER        &sl 3               &lt 2 ENTER         &kp CAPS            &kp RALT            &kp INSERT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -378,7 +378,7 @@
 &kp ESCAPE  &kp Q      &kp W     &kp E     &kp R      &kp T     &trans  &kp Y     &kp U      &kp I      &kp O    &kp P     &kp SINGLE_QUOTE
 &kp TAB     &kp A      &kp S     &kp D     &kp F      &kp G     &trans  &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp BACKSPACE
 &kp LSHFT   &kp Z      &kp X     &kp C     &kp V      &kp B     &trans  &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-&trans      &kp LCTRL  &kp LWIN  &kp LALT  &kp SPACE  &tog 2    &trans  &kp RALT  &kp ENTER  &kp RALT   &to 1    &kp DEL
+&trans      &kp LCTRL  &kp LWIN  &kp LALT  &kp SPACE  &to 2     &trans  &kp RALT  &kp ENTER  &kp MINUS  &to 1    &kp DEL
             >;
 
             label = "GAMING";
