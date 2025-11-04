@@ -188,11 +188,11 @@ layers:
   - LWIN
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - {t: NAV, h: toggle}
+  - NAV
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '-', s: _}
+  - SYM
   - {t: COLEMAK, h: toggle}
   - $$mdi:backspace-reverse-outline$$
   NAV:
@@ -212,8 +212,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F12
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
   - $$mdi:pan-up$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
@@ -452,7 +452,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYSTEM:
