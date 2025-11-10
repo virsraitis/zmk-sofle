@@ -245,7 +245,7 @@ layers:
   - PLAY PAUSE
   - PREVIOUS
   - $$mdi:skip-next$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - CONTEXT MENU
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
