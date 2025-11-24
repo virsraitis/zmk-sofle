@@ -312,7 +312,7 @@
             bindings = <
 &trans  &trans            &trans        &trans          &trans         &trans    &trans  &trans  &trans         &trans          &trans        &trans             &trans
 &trans  &kp Q             &kp W         &kp F           &kp P          &kp B     &trans  &kp J   &kp L          &kp U           &kp Y         &mt COLON SEMI     &trans
-&trans  &hm_l LEFT_GUI A  &hm_l LALT R  &hm_l LSHIFT S  &hm_l LCTRL T  &kp G     &trans  &kp M   &hm_r RCTRL N  &hm_r RSHIFT E  &hm_r LALT I  &hm_r RIGHT_GUI O  &trans
+&trans  &hm_l LEFT_GUI A  &hm_l LALT R  &hm_l LSHIFT S  &hm_l LCTRL T  &kp G     &trans  &kp M   &hm_r LCTRL N  &hm_r RSHIFT E  &hm_r LALT I  &hm_r RIGHT_GUI O  &trans
 &trans  &kp Z             &kp X         &kp C           &kp D          &kp V     &trans  &kp K   &kp H          &kp COMMA       &kp DOT       &kp FSLH           &trans
 &trans  &trans            &trans        &trans          &trans         &trans    &trans  &trans  &trans         &trans          &trans        &trans
             >;
