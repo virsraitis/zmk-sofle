@@ -63,7 +63,7 @@ layers:
   - {t: LATVIAN, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-return$$', h: NAV}
   - $$mdi:apple-keyboard-caps$$
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - Ins
   COLEMAK:
   - {t: '$$mdi:transfer$$', type: trans}
