@@ -301,7 +301,7 @@
 &kp ESC     &kp Q               &kp W               &kp E               &kp R               &kp T                 &kp DOWN_ARROW   &kp Y               &kp U               &kp I               &kp O               &kp P                 &kp APOS
 &kp TAB     &hm_l LEFT_GUI A    &hm_l LEFT_ALT S    &hm_l LSHIFT D      &hm_l LCTRL F       &kp G                 &kp LEFT_ARROW   &kp H               &hm_r RCTRL J       &hm_r RSHIFT K      &hm_r LALT L        &hm_r RIGHT_GUI SEMI  &kp BACKSPACE
 &kp LCTRL   &kp Z               &kp X               &kp C               &kp V               &kp B                 &kp RIGHT_ARROW  &kp N               &kp M               &kp COMMA           &kp DOT             &kp FSLH              &kp DELETE
-&kp C_MUTE  &kp LEFT_GUI        &kp LALT            &shift_dance        &lt_q 6 SPACE       &mo 3                 &kp ENTER        &sl 4               &lt 3 ENTER         &kp CAPS            &kp RALT            &kp INSERT
+&kp C_MUTE  &kp LEFT_GUI        &kp LALT            &shift_dance        &lt_q 6 SPACE       &mo 3                 &kp ENTER        &sl 4               &lt 3 ENTER         &kp CAPS            &kp RCTRL           &kp INSERT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
