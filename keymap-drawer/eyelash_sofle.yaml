@@ -184,8 +184,8 @@ layers:
   - {t: /, s: '?'}
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
+  - LGUI
   - $$mdi:apple-keyboard-control$$
-  - LWIN
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - NAV
