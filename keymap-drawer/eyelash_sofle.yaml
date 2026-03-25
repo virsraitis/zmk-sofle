@@ -194,7 +194,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - SYM
   - {t: COLEMAK, h: toggle}
-  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:apple-keyboard-caps$$
   NAV:
   - $$mdi:keyboard-esc$$
   - F1
@@ -236,8 +236,8 @@ layers:
   - '&p_mcr_lctrl END'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
