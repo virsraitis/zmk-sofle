@@ -361,11 +361,11 @@
 
         NUM {
             bindings = <
-&trans  &trans     &trans  &trans  &trans  &trans           &trans  &trans  &trans           &trans       &trans        &trans  &trans
-&trans  &kp COLON  &kp N7  &kp N8  &kp N9  &kp SEMICOLON    &trans  &trans  &trans           &trans       &trans        &trans  &trans
-&trans  &kp N0     &kp N4  &kp N5  &kp N6  &kp COLON        &trans  &trans  &mcr_underscore  &macro_copy  &macro_paste  &trans  &trans
-&trans  &kp DOT    &kp N1  &kp N2  &kp N3  &tog 5           &trans  &trans  &trans           &trans       &trans        &trans  &trans
-&trans  &trans     &trans  &trans  &trans  &trans           &trans  &trans  &trans           &trans       &trans        &trans
+&tog 5  &trans           &kp KP_NUMLOCK   &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS     &trans  &trans  &trans           &trans       &trans        &trans  &trans
+&trans  &kp COLON        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SEMICOLON    &trans  &trans  &trans           &trans       &trans        &trans  &trans
+&trans  &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &trans  &trans  &mcr_underscore  &macro_copy  &macro_paste  &trans  &trans
+&trans  &kp KP_MINUS     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER     &trans  &trans  &trans           &trans       &trans        &trans  &trans
+&trans  &trans           &trans           &kp KP_DOT       &kp KP_ENTER     &trans           &trans  &trans  &trans           &trans       &trans        &trans
             >;
 
             label = "NUM";
