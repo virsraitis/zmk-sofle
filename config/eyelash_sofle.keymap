@@ -167,6 +167,7 @@
             bindings = <&p_mcr_lctrl V>;
             key-positions = <42 43>;
             layers = <0 1>;
+            timeout-ms = <40>;
         };
 
         cut {
